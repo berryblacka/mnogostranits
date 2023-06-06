@@ -1,0 +1,204 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000521;
+  font-family: "Chocolates", Arial, Helvetica, sans-serif;
+}
+
+#text {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@font-face {
+  font-family: "Chocolates";
+  src: url(../fonts/TT-Chocolates-Educational-Light.woff), url(../fonts/TT-Chocolates-Educational-Light.woff2);
+}
+.header {
+  width: 100%;
+  min-height: 124px;
+}
+.header__inner {
+  min-height: 124px;
+  width: 100%;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  min-height: 124px;
+}
+.header__logo {
+  height: 100%;
+}
+.header__links {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.header__item {
+  display: flex;
+  position: relative;
+}
+.header__link {
+  font-size: 2.5rem;
+  opacity: 1;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 2219px;
+  padding: 0 109px;
+}
+
+.section__inner {
+  position: relative;
+}
+
+.animated-text {
+  position: relative;
+  cursor: pointer;
+}
+
+.replica {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.house-img {
+  background-image: url(../img/house/house.png);
+  width: 471px;
+  height: 369px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  top: 142px;
+  transition: none;
+}
+.house-img:hover {
+  animation: house 2s infinite linear;
+}
+
+@keyframes house {
+  25% {
+    background-image: url(../img/house/2.png);
+  }
+  50% {
+    background-image: url(../img/house/3.png);
+  }
+  75% {
+    background-image: url(../img/house/4.png);
+  }
+}
+.tree-img {
+  background-image: url(../img/tree/tree.png);
+  width: 307px;
+  height: 392px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  left: 569px;
+  top: 568px;
+}
+.tree-img:hover {
+  animation: tree 2s infinite linear;
+}
+
+@keyframes tree {
+  10% {
+    background-image: url(../img/tree/Maskgroup.png);
+  }
+  20% {
+    background-image: url(../img/tree/Maskgroup-1.png);
+  }
+  30% {
+    background-image: url(../img/tree/Maskgroup-2.png);
+  }
+  40% {
+    background-image: url(../img/tree/Maskgroup-3.png);
+  }
+  50% {
+    background-image: url(../img/tree/Maskgroup-4.png);
+  }
+  60% {
+    background-image: url(../img/tree/Maskgroup-5.png);
+  }
+  70% {
+    background-image: url(../img/tree/Maskgroup-6.png);
+  }
+}
+.vazy-img {
+  background-image: url(../img/vazy/vazy.png);
+  width: 396px;
+  height: 360px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  left: 1118px;
+  top: 154px;
+}
+.vazy-img:hover {
+  animation: vazy 1s infinite linear;
+}
+
+@keyframes vazy {
+  50% {
+    background-image: url(../img/vazy/2.png);
+  }
+  100% {
+    background-image: url(../img/vazy/3.png);
+  }
+}
+.flowers-img {
+  background-image: url(../img/flowers/flowers.png);
+  width: 418px;
+  height: 259px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  left: 1280px;
+  top: 696px;
+}
+.flowers-img:hover {
+  animation: flowers 2s infinite linear;
+}
+
+@keyframes flowers {
+  25% {
+    background-image: url(../img/flowers/Maskgroup-1.png);
+  }
+  50% {
+    background-image: url(../img/flowers/Maskgroup.png);
+  }
+  75% {
+    background-image: url(../img/flowers/Maskgroup-2.png);
+  }
+  100% {
+    background-image: url(../img/flowers/Maskgroup-3.png);
+  }
+}
+.copy-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  white-space: nowrap;
+  font-size: 16px;
+  color: white;
+  transition: opacity 0.2s ease-in-out; /* Анимация плавного появления */
+}/*# sourceMappingURL=style.css.map */
