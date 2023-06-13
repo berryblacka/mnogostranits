@@ -379,8 +379,8 @@ a {
 .footer__text {
   color: white;
   font-weight: 300;
-  font-size: clamp(0.3rem, 1.25vw, 2rem);
-  max-width: 350px;
+  font-size: clamp(0.5rem, 1.25vw, 2rem);
+  max-width: 30%;
 }
 .footer__links {
   display: flex;
@@ -389,6 +389,6 @@ a {
   justify-content: space-between;
 }
 .footer__link {
-  font-size: clamp(0.3rem, 1.67vw, 2rem);
+  font-size: clamp(0.5rem, 1.67vw, 2rem);
   font-weight: 300;
 }/*# sourceMappingURL=style.css.map */
