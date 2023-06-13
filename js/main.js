@@ -1,3 +1,4 @@
+/* eslint-disable no-new */
 const house = document.querySelector('.house-img');
 const tree = document.querySelector('.tree-img');
 const vazy = document.querySelector('.vazy-img');
@@ -64,3 +65,13 @@ flowers.addEventListener('mouseover', () => {
     duration: 1000,
   });
 });
+
+if (window.Parallax) {
+  new Parallax(document.getElementById('scene_house_sq1'), { invertX: false, invertY: false });
+  new Parallax(document.getElementById('scene_house_sq2'));
+  new Parallax(document.getElementById('scene_vazy_sq1'), { invertX: true, invertY: true });
+  new Parallax(document.getElementById('scene_vazy_sq2'), { invertX: false, invertY: true });
+  new Parallax(document.getElementById('scene_tree_sq1'), { invertX: false, invertY: true });
+  new Parallax(document.getElementById('scene_tree_sq2'));
+  new Parallax(document.getElementById('scene_flowers_sq1'), { invertX: false, invertY: false });
+}

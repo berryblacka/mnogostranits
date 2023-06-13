@@ -9,55 +9,138 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <nav class="header__nav">
-            <ul class="header__links">
-              <li class="header__item">
-                <a class="header__logo header__link" href="/"
-                  ><img src="./img/logo.svg" alt="logo"
-                /></a>
-              </li>
-              <li class="header__item">
-                <a href="" class="header__link animated-text" id="text1"
-                  >история бренда</a
-                >
-              </li>
-              <li class="header__item">
-                <a href="" id="text2" class="header__link">мероприятия </a>
-              </li>
-              <li class="header__item">
-                <a href="" id="text3" class="header__link">магазин</a>
-              </li>
-              <li class="header__item">
-                <a href="" id="text4" class="header__link">как добраться</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main class="main">
-      <section class="section">
+    <div class="wrppaer">
+      <header class="header">
         <div class="container">
-          <div class="section__inner">
-            <a href="#">
-              <div class="house-img"></div>
-            </a>
-            <a href="#">
-              <div class="tree-img"></div>
-            </a>
-            <a href="#">
-              <div class="vazy-img"></div>
-            </a>
-            <a href="#">
-              <div class="flowers-img"></div>
-            </a>
+          <div class="header__inner">
+            <a class="header__logo header__link" href="/"
+              ><img src="./img/logo.svg" alt="logo"
+            /></a>
+            <button class="menu_btn">
+              <img src="./img/Vector.svg" alt="" />
+            </button>
+            <nav class="header__nav">
+              <ul class="header__links">
+                <li class="header__item">
+                  <a href="" class="header__link animated-text" id="text1"
+                    >история бренда</a
+                  >
+                </li>
+                <li class="header__item">
+                  <a href="" id="text2" class="header__link">мероприятия </a>
+                </li>
+                <li class="header__item">
+                  <a href="" id="text3" class="header__link">магазин</a>
+                </li>
+                <li class="header__item">
+                  <a href="" id="text4" class="header__link">как добраться</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </section>
-    </main>
+      </header>
+      <main class="main">
+        <section class="section">
+          <div class="container">
+            <div class="section__inner">
+              <div class="grid-item-house">
+                <div id="scene_house_sq1">
+                  <img
+                    class="house_sq1"
+                    data-depth="0.5"
+                    src="./img/house/sq1.svg"
+                    alt=""
+                  />
+                </div>
+                <div id="scene_house_sq2">
+                  <img
+                    data-depth="2"
+                    class="house_sq2"
+                    src="./img/house/sq2.svg"
+                    alt=""
+                  />
+                </div>
+                <!-- <img class="house_mobile" src="./img/house/Frame 1.png" alt="" /> -->
+                <a href="#">
+                  <div class="house-img"></div>
+                </a>
+              </div>
+              <div class="grid-item-vazy">
+                <div id="scene_vazy_sq1">
+                  <img
+                    data-depth="0.5"
+                    class="vazy_sq1"
+                    src="./img/vazy/sq1.svg"
+                    alt=""
+                  />
+                </div>
+                <div id="scene_vazy_sq2">
+                  <img
+                    data-depth="2"
+                    class="vazy_sq2"
+                    src="./img/vazy/sq2.svg"
+                    alt=""
+                  />
+                </div>
+                <a href="#">
+                  <div class="vazy-img"></div>
+                </a>
+              </div>
+              <div class="grid-item-tree">
+                <div id="scene_tree_sq1">
+                  <img
+                    data-depth="0.5"
+                    class="tree_sq1"
+                    src="./img/tree/sq1.svg"
+                    alt=""
+                  />
+                </div>
+                <div id="scene_tree_sq2">
+                  <img
+                    class="tree_sq2"
+                    data-depth="2"
+                    src="./img/tree/sq2.svg"
+                    alt=""
+                  />
+                </div>
+                <a href="#">
+                  <div class="tree-img"></div>
+                </a>
+              </div>
+              <div class="grid-item-flowers">
+                <div id="scene_flowers_sq1">
+                  <img data-depth="0.5" data-invert-x="false"
+                  data-invert-y="false class="flowers_sq1"
+                  src="./img/flowers/sq.svg" alt="" />
+                </div>
+                <a href="#">
+                  <div class="flowers-img"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <p class="footer__text">
+              Анастасия Толщина, Б22ДЗ08 куратор: Субботин Я.
+            </p>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">как добраться</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 
     <script src="./js/main.js"></script>

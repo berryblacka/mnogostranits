@@ -1,8 +1,19 @@
+html,
 body {
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
+
+  min-width: 320px;
+}
+body {
   background-color: #000521;
+  overflow-x: hidden;
   font-family: "Chocolates", Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 #text {
@@ -11,7 +22,7 @@ body {
 a {
   text-decoration: none;
   color: white;
-  //   display: block;
+  display: block;
 }
 
 @font-face {
@@ -22,30 +33,37 @@ a {
 
 .header {
   width: 100%;
-  //   background-color: white;
+
   min-height: 124px;
   &__inner {
     min-height: 124px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__nav {
     display: flex;
     align-items: center;
-    height: 100%;
+    min-height: 100%;
+    height: 1px;
     width: 100%;
     min-height: 124px;
   }
 
   &__logo {
     height: 100%;
+    margin-right: 13.13vw;
+    display: flex;
+    align-items: center;
   }
 
   &__links {
     height: 100%;
     width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -55,7 +73,8 @@ a {
   }
 
   &__link {
-    font-size: 2.5rem;
+    font-size: clamp(0.2rem, 1.98vw, 2.3rem);
+    // font-size: 2,375;
     opacity: 1;
   }
 }
@@ -66,141 +85,94 @@ a {
   padding: 0 109px;
 }
 
+.main {
+  flex: 1 0 auto;
+}
+
 .section {
   &__inner {
     position: relative;
+    display: grid;
+    max-width: 1702px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
   }
 }
 
-.animated-text {
-  position: relative;
-  cursor: pointer;
-}
+// .animated-text {
+//   position: relative;
+//   cursor: pointer;
+// }
 
-.replica {
-  position: absolute;
-  opacity: 0;
-  transition: all 0.8s;
-}
+// .replica {
+//   position: absolute;
+//   opacity: 0;
+//   transition: all 0.8s;
+// }
 
 .house-img {
   background-image: url(../img/house/house.png);
-  width: 471px;
-  height: 369px;
+  width: 364px;
+  height: 364px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
-  position: absolute;
-  top: 142px;
-  transition: none;
-
-  &:hover {
-    animation: house 2s infinite linear;
-  }
+  background-size: cover;
+  margin: 0;
 }
 
-@keyframes house {
-  25% {
-    background-image: url(../img/house/2.png);
-  }
-  50% {
-    background-image: url(../img/house/3.png);
-  }
-  75% {
-    background-image: url(../img/house/4.png);
-  }
-}
 .tree-img {
   background-image: url(../img/tree/tree.png);
-  width: 307px;
-  height: 392px;
+  width: 320px;
+  height: 320px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
-  position: absolute;
-  left: 569px;
-  top: 568px;
-  &:hover {
-    animation: tree 2s infinite linear;
-  }
-}
-
-@keyframes tree {
-  10% {
-    background-image: url(../img/tree/Maskgroup.png);
-  }
-  20% {
-    background-image: url(../img/tree/Maskgroup-1.png);
-  }
-  30% {
-    background-image: url(../img/tree/Maskgroup-2.png);
-  }
-  40% {
-    background-image: url(../img/tree/Maskgroup-3.png);
-  }
-  50% {
-    background-image: url(../img/tree/Maskgroup-4.png);
-  }
-  60% {
-    background-image: url(../img/tree/Maskgroup-5.png);
-  }
-  70% {
-    background-image: url(../img/tree/Maskgroup-6.png);
-  }
+  background-size: cover;
+  // position: absolute;
+  margin: 0 auto;
+  // margin-left: 304px;
 }
 
 .vazy-img {
   background-image: url(../img/vazy/vazy.png);
-  width: 396px;
-  height: 360px;
+  width: 246px;
+  height: 246px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
-  position: absolute;
+  background-size: cover;
+  // position: absolute;
   left: 1118px;
   top: 154px;
+  margin: 0 auto;
   &:hover {
     animation: vazy 1s infinite linear;
   }
 }
 
-@keyframes vazy {
-  50% {
-    background-image: url(../img/vazy/2.png);
-  }
-  100% {
-    background-image: url(../img/vazy/3.png);
-  }
-}
 .flowers-img {
   background-image: url(../img/flowers/flowers.png);
-  width: 418px;
+  width: 265px;
   height: 259px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
-  position: absolute;
-  left: 1280px;
-  top: 696px;
-  &:hover {
-    animation: flowers 2s infinite linear;
-  }
+  background-size: cover;
+  // position: absolute;
+  margin: 0 auto;
 }
 
-@keyframes flowers {
-  25% {
-    background-image: url(../img/flowers/Maskgroup-1.png);
-  }
-  50% {
-    background-image: url(../img/flowers/Maskgroup.png);
-  }
-  75% {
-    background-image: url(../img/flowers/Maskgroup-2.png);
-  }
-  100% {
-    background-image: url(../img/flowers/Maskgroup-3.png);
-  }
-}
+// @keyframes flowers {
+//   25% {
+//     background-image: url(../img/flowers/Maskgroup-1.png);
+//   }
+//   50% {
+//     background-image: url(../img/flowers/Maskgroup.png);
+//   }
+//   75% {
+//     background-image: url(../img/flowers/Maskgroup-2.png);
+//   }
+//   100% {
+//     background-image: url(../img/flowers/Maskgroup-3.png);
+//   }
+// }
 
 .copy-animation {
   position: fixed;
@@ -212,4 +184,276 @@ a {
   font-size: 16px;
   color: white;
   transition: opacity 0.2s ease-in-out; /* Анимация плавного появления */
+}
+
+#scene_house_sq1 {
+  position: absolute;
+  top: 19px;
+  left: -73px;
+  z-index: -1;
+}
+#scene_house_sq2 {
+  position: absolute;
+  top: -10px;
+  left: 219px;
+  z-index: -1;
+}
+#scene_vazy_sq1 {
+  position: absolute;
+  top: 0px;
+  left: 106px;
+  z-index: -1;
+}
+#scene_vazy_sq2 {
+  position: absolute;
+  top: 28px;
+  left: 357px;
+  z-index: -1;
+}
+#scene_tree_sq1 {
+  position: absolute;
+  top: -138px;
+  left: 205px;
+  z-index: -1;
+}
+#scene_tree_sq2 {
+  position: absolute;
+  top: -108px;
+  left: 286px;
+  z-index: -1;
+}
+#scene_flowers_sq1 {
+  position: absolute;
+  top: -112px;
+  left: 105px;
+  z-index: -1;
+}
+
+.grid-item-house {
+  padding: 74px 128px 79px 7px;
+  position: relative;
+  z-index: 100;
+  .house_sq1 {
+  }
+  .house_sq2 {
+  }
+}
+.grid-item-vazy {
+  padding: 135px 152px 180px 249px;
+  position: relative;
+  .vazy_sq1 {
+  }
+  .vazy_sq2 {
+  }
+}
+
+.grid-item-tree {
+  padding: 7px 0 172px 227px;
+  position: relative;
+  .tree_sq1 {
+  }
+  .tree_sq2 {
+  }
+}
+
+.grid-item-flowers {
+  padding: 85px 0 228px 298px;
+  position: relative;
+  .flowers_sq1 {
+  }
+}
+
+.house_mobile {
+  display: none;
+}
+
+@media (max-width: 1398px) {
+  .footer {
+    margin-bottom: 43px;
+  }
+  .footer__inner {
+    width: 100% !important;
+  }
+  #scene_house_sq1,
+  #scene_house_sq2,
+  #scene_vazy_sq1,
+  #scene_vazy_sq2,
+  #scene_tree_sq1,
+  #scene_tree_sq2,
+  #scene_flowers_sq1 {
+    display: none;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  .section {
+    &__inner {
+      position: relative;
+      display: grid;
+      max-width: 1702px;
+      margin: 0 auto;
+      grid-template-columns: auto;
+    }
+  }
+  .grid-item-house {
+    a {
+      width: 45vw;
+      height: 41vw;
+      margin: 0 auto;
+      max-width: 596px;
+      max-height: 539px;
+      min-width: 296px;
+      min-height: 339px;
+    }
+  }
+  .house-img {
+    background-image: url(../img/house/Frame1.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  .vazy-img {
+    background-image: url(../img/vazy/Frame2.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  .tree-img {
+    background-image: url(../img/tree/Frame3.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+  .flowers-img {
+    background-image: url(../img/flowers/Frame4.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  .grid-item-house {
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .grid-item-vazy {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    a {
+      width: 41vw;
+      height: 36vw;
+      margin: 0 auto;
+      max-width: 669px;
+      max-height: 583px;
+      min-width: 326px;
+      min-height: 270px;
+    }
+  }
+
+  .grid-item-tree {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    a {
+      width: 41vw;
+      height: 36vw;
+      margin: 0 auto;
+      max-width: 643px;
+      max-height: 642px;
+      min-width: 301px;
+      min-height: 302px;
+    }
+  }
+
+  .grid-item-flowers {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    a {
+      width: 41vw;
+      height: 36vw;
+      margin: 0 auto;
+      max-width: 643px;
+      max-height: 642px;
+      min-width: 301px;
+      min-height: 302px;
+    }
+  }
+}
+
+.menu_btn {
+  display: none;
+  background: transparent;
+  border: none;
+  width: 50px;
+  img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 20px;
+  }
+  .footer {
+    margin-bottom: 23px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 5px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .footer {
+    margin-bottom: 13px;
+  }
+
+  .menu_btn {
+    display: block;
+  }
+}
+
+.footer {
+  flex: 0 0 auto;
+  margin-bottom: 83px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+  }
+  &__text {
+    color: white;
+    font-weight: 300;
+    // font-size: 1.5rem;
+    font-size: clamp(0.3rem, 1.25vw, 2rem);
+    max-width: 350px;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-size: clamp(0.3rem, 1.67vw, 2rem);
+    font-weight: 300;
+  }
 }
