@@ -33,7 +33,10 @@ a {
 }
 .header {
   width: 100%;
-  min-height: 124px;
+  min-height: 250px;
+  position: fixed;
+  background: linear-gradient(180deg, #0c1649 42.19%, rgba(12, 22, 73, 0) 100%);
+  z-index: 1000;
 }
 .header__inner {
   min-height: 124px;
@@ -80,6 +83,7 @@ a {
 }
 
 .main {
+  padding: 176px 0 0 0;
   flex: 1 0 auto;
 }
 

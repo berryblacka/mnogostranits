@@ -1,0 +1,169 @@
+#text {
+  position: relative;
+}
+
+$size: 23vw;
+.img1 {
+  background-image: url(../img/history/1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: $size;
+  // height: 36.719vw;
+  width: $size;
+  // width: 36.719vw;
+  max-height: 705px;
+  max-width: 705px;
+  min-height: 200px;
+  min-width: 200px;
+  transform-style: preserve-3d;
+}
+.img2 {
+  background-image: url(../img/history/2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: $size;
+  // height: 36.719vw;
+  width: $size;
+  // width: 36.719vw;
+  max-height: 705px;
+  max-width: 705px;
+  min-height: 200px;
+  min-width: 200px;
+  transform-style: preserve-3d;
+}
+.img3 {
+  background-image: url(../img/history/3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: $size;
+  // height: 36.719vw;
+  width: $size;
+  // width: 36.719vw;
+  max-height: 705px;
+  max-width: 705px;
+  min-height: 200px;
+  min-width: 200px;
+  transform-style: preserve-3d;
+}
+.img4 {
+  background-image: url(../img/history/4.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: $size;
+  // height: 36.719vw;
+  width: $size;
+  // width: 36.719vw;
+  max-height: 705px;
+  max-width: 705px;
+  min-height: 200px;
+  min-width: 200px;
+  transform-style: preserve-3d;
+}
+
+.label {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  display: block;
+  height: 100%;
+}
+
+.slider__item {
+  min-height: 150px;
+  // margin-right: px;
+}
+
+.slider__p {
+  // padding: 0 5.938vw;
+  // position: absolute;
+  font-size: clamp(0.5rem, 1.563vw, 1.5rem);
+  font-weight: 500;
+  // line-height: 36px;
+  line-height: 2.3vw;
+  max-width: 33.125vw;
+  // z-index: 100;
+  // color: white;
+  // display: none;
+}
+
+.text-container {
+  display: none;
+  z-index: 150;
+  position: absolute;
+}
+
+.text-container.appear {
+  display: block;
+  animation: appear 1s linear forwards;
+}
+
+@keyframes appear {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: all 600ms;
+  z-index: 20;
+}
+.card div {
+  // position: absolute;
+  // height: 100%;
+  // width: 100%;
+  // background: #fff;
+  text-align: center;
+
+  backface-visibility: hidden;
+}
+
+input {
+  display: none;
+}
+
+:checked + .card {
+  transform: rotateX(180deg) rotateZ(15deg);
+}
+
+.card .back {
+  background: #5c99f2;
+  color: #fff;
+  min-height: 200px;
+  height: $size;
+  transform: rotateX(180deg);
+  transform-style: preserve-3d;
+  // position: relative;
+}
+
+.section {
+  max-height: 56vw;
+  overflow-y: hidden;
+  min-height: 251px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.slick-track {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.slick-list {
+  padding: 0 0 0 5.5vw;
+  padding-top: 5vw;
+  overflow: hidden;
+}

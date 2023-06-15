@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/elements.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/history.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo header__link" href="/"
+              ><img src="./img/logo_black.svg" alt="logo"
+            /></a>
+            <button class="menu_btn">
+              <img src="./img/Vector.svg" alt="" />
+            </button>
+            <nav class="header__nav">
+              <ul class="header__links">
+                <li class="header__item">
+                  <a
+                    href="./history.html"
+                    class="header__link animated-text header__link_black"
+                    id="text1"
+                    >история бренда</a
+                  >
+                </li>
+                <li class="header__item">
+                  <a href="./events.html" id="text2" class="header__link"
+                    >мероприятия
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="./market.html" id="text3" class="header__link"
+                    >магазин</a
+                  >
+                </li>
+                <li class="header__item">
+                  <a href="" id="text4" class="header__link">запись</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="section">
+          <div class="slider">
+            <div class="slider__item">
+              <div class="text-container">
+                <p class="slider__p">
+                  Любовь к минералам двигала бренд вперед на протяжении долгих
+                  лет. <br /><br />
+                  С момента основания нашего центра красоты мы гордимся, что
+                  создаем украшения, пронизанные мастерством и пристальным
+                  вниманием к деталям.
+                </p>
+              </div>
+              <label class="label">
+                <input type="checkbox" />
+
+                <div class="card">
+                  <div class="front img1"></div>
+                  <div class="back"></div>
+                </div>
+              </label>
+            </div>
+            <div class="slider__item" id="item1">
+              <div class="text-container">
+                <p class="slider__p" id="p1">
+                  На кристальном дереве в капсулах собраны минералы, отражающих
+                  многообразие и красоту природы.<br /><br />
+                  Если вы сомневаетесь в качестве огранки, вы всегда можете
+                  ознакомиться с образцом.
+                </p>
+              </div>
+
+              <label class="label">
+                <input type="checkbox" />
+
+                <div class="card">
+                  <div class="front img2"></div>
+                  <div class="back"></div>
+                </div>
+              </label>
+            </div>
+            <div class="slider__item">
+              <div class="text-container">
+                <p class="slider__p">
+                  Горные цветы прямо внутри. <br /><br />
+                  Пространство является частью природы и вписано в массив скалы,
+                  чтобы вы всегда чувствовалаи себя как дома.
+                </p>
+              </div>
+              <label class="label">
+                <input type="checkbox" />
+
+                <div class="card">
+                  <div class="front img3"></div>
+                  <div class="back"></div>
+                </div>
+              </label>
+            </div>
+            <div class="slider__item">
+              <div class="text-container">
+                <p class="slider__p">
+                  Используем только натуральные материалы и следим за идеальной
+                  атмосферой.
+                </p>
+              </div>
+              <label class="label">
+                <input type="checkbox" />
+
+                <div class="card">
+                  <div class="front img4"></div>
+                  <div class="back"></div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <p class="footer__text">
+              Анастасия Толщина, Б22ДЗ08 куратор: Субботин Я.
+            </p>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">как добраться</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/history.js"></script>
+  </body>
+</html>
