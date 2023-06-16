@@ -9,6 +9,7 @@
 .header {
   width: 100%;
   position: fixed;
+  background: linear-gradient(180deg, #56acfa 25%, rgba(109, 184, 251, 0.743056) 56.77%, rgba(124, 191, 252, 0.572958) 72.92%, rgba(175, 217, 255, 0) 100%);
   z-index: 1000;
 }
 .header__inner {
@@ -44,6 +45,6 @@
   position: relative;
 }
 .header__link {
-  font-size: clamp(0.2rem, 1.98vw, 2.3rem);
+  font-size: clamp(0.8rem, 1.98vw, 2.3rem);
   opacity: 1;
 }/*# sourceMappingURL=header.css.map */

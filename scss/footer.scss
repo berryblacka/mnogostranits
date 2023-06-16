@@ -10,19 +10,24 @@
   &__text {
     color: white;
     font-weight: 300;
-    font-size: clamp(1rem, 1.25vw, 2rem);
-    max-width: 70%;
+    font-size: clamp(0.7rem, 1.25vw, 2rem);
+    // max-width: 50%;
+    min-width: 150px;
+    max-width: 16vw;
     color: #000521;
   }
   &__links {
     display: flex;
     align-items: center;
-    width: 30%;
+    // width: 50%;
     justify-content: space-between;
+  }
+  .margin-link {
+    margin-left: 7.66vw;
   }
 
   &__link {
-    font-size: clamp(1rem, 1.67vw, 2rem);
+    font-size: clamp(0.7rem, 1.67vw, 2rem);
     font-weight: 300;
     color: #000521;
   }

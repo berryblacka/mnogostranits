@@ -9,7 +9,13 @@
   width: 100%;
   // min-height: 250px;
   position: fixed;
-
+  background: linear-gradient(
+    180deg,
+    #56acfa 25%,
+    rgba(109, 184, 251, 0.743056) 56.77%,
+    rgba(124, 191, 252, 0.572958) 72.92%,
+    rgba(175, 217, 255, 0) 100%
+  );
   //   background: linear-gradient(180deg, #0c1649 42.19%, rgba(12, 22, 73, 0) 100%);
   z-index: 1000;
   // top: 0;
@@ -51,7 +57,7 @@
   }
 
   &__link {
-    font-size: clamp(0.2rem, 1.98vw, 2.3rem);
+    font-size: clamp(0.8rem, 1.98vw, 2.3rem);
     // font-size: 2,375;
     opacity: 1;
   }

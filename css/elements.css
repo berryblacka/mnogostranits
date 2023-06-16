@@ -58,7 +58,7 @@ a {
     padding: 0 20px;
   }
   .footer {
-    margin-bottom: 23px;
+    margin-bottom: 23px !important;
   }
   .main {
     padding: 13vw 0 0 0;
@@ -84,5 +84,8 @@ a {
   }
   .main {
     padding: 17vw 0 0 0;
+  }
+  .footer__inner {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=elements.css.map */

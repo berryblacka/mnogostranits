@@ -79,11 +79,11 @@ a {
   margin: 0 auto;
   height: 100%;
   max-width: 2219px;
-  padding: 0 109px;
+  padding: 0 5.68vw;
 }
 
 .main {
-  padding: 176px 0 0 0;
+  padding: 14vh 0 0 0;
   flex: 1 0 auto;
 }
 
@@ -91,49 +91,28 @@ a {
   position: relative;
   display: grid;
   max-width: 1702px;
+  height: 100vh;
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
 }
 
 .house-img {
-  background-image: url(../img/house/house.png);
-  width: 364px;
-  height: 364px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  height: 24.7vh;
   margin: 0;
 }
 
 .tree-img {
-  background-image: url(../img/tree/tree.png);
-  width: 320px;
-  height: 320px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  height: 29.6296vh;
   margin: 0 auto;
 }
 
 .vazy-img {
-  background-image: url(../img/vazy/vazy.png);
-  width: 246px;
-  height: 246px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  left: 1118px;
-  top: 154px;
+  height: 24.4vh;
   margin: 0 auto;
-}
-.vazy-img:hover {
-  animation: vazy 1s infinite linear;
 }
 
 .flowers-img {
-  background-image: url(../img/flowers/flowers.png);
-  width: 265px;
-  height: 259px;
+  height: 23vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -154,14 +133,13 @@ a {
 
 #scene_house_sq1 {
   position: absolute;
-  top: 19px;
-  left: -73px;
+  top: 1.7vh;
   z-index: -1;
 }
 
 #scene_house_sq2 {
   position: absolute;
-  top: -10px;
+  top: -0.9vh;
   left: 219px;
   z-index: -1;
 }
@@ -175,54 +153,91 @@ a {
 
 #scene_vazy_sq2 {
   position: absolute;
-  top: 28px;
+  top: 2.5vh;
   left: 357px;
   z-index: -1;
 }
 
 #scene_tree_sq1 {
   position: absolute;
-  top: -138px;
+  top: -12.7vh;
   left: 205px;
   z-index: -1;
 }
 
 #scene_tree_sq2 {
   position: absolute;
-  top: -108px;
+  top: -10vh;
   left: 286px;
   z-index: -1;
 }
 
 #scene_flowers_sq1 {
   position: absolute;
-  top: -112px;
+  top: -10.3vh;
   left: 105px;
   z-index: -1;
 }
 
+img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .grid-item-house {
-  padding: 74px 128px 79px 7px;
+  padding: 6.8vh 6.67vw 7.3vh 7px;
   position: relative;
   z-index: 100;
 }
+.grid-item-house .house_sq1 {
+  height: 32.8vh;
+}
+.grid-item-house .house_sq2 {
+  height: 19.5vh;
+}
+
 .grid-item-vazy {
-  padding: 135px 152px 180px 249px;
+  padding: 12.5vh 152px 16.6vh 249px;
   position: relative;
 }
+.grid-item-vazy .vazy_sq1 {
+  height: 37.9vh;
+}
+.grid-item-vazy .vazy_sq2 {
+  height: 24vh;
+}
+
 .grid-item-tree {
-  padding: 7px 0 172px 227px;
+  padding: 0.6vh 0 15.9vh 227px;
   position: relative;
 }
+.grid-item-tree .tree_sq1 {
+  height: 41.9vh;
+}
+.grid-item-tree .tree_sq2 {
+  height: 32vh;
+}
+
 .grid-item-flowers {
-  padding: 85px 0 228px 298px;
+  padding: 7.8vh 0 21.1vh 298px;
   position: relative;
 }
-.house_mobile {
+.grid-item-flowers .flowers_sq1 {
+  height: 49vh;
+}
+
+.house-img-mobile,
+.vazy-img-mobile,
+.tree-img-mobile,
+.flowers-img-mobile {
   display: none;
 }
 
 @media (max-width: 1398px) {
+  .section__inner {
+    height: 100%;
+  }
   .footer {
     margin-bottom: 43px;
   }
@@ -235,11 +250,18 @@ a {
   #scene_vazy_sq2,
   #scene_tree_sq1,
   #scene_tree_sq2,
-  #scene_flowers_sq1 {
+  #scene_flowers_sq1,
+  .house-img,
+  .vazy-img,
+  .tree-img,
+  .flowers-img {
     display: none;
   }
-  .container {
-    padding: 0 30px;
+  .house-img-mobile,
+  .vazy-img-mobile,
+  .tree-img-mobile,
+  .flowers-img-mobile {
+    display: block;
   }
   .section__inner {
     position: relative;
@@ -249,11 +271,7 @@ a {
     grid-template-columns: auto;
   }
   .grid-item-house a {
-    width: 45vw;
-    height: 41vw;
     margin: 0 auto;
-    max-width: 596px;
-    max-height: 539px;
     min-width: 296px;
     min-height: 339px;
   }
@@ -301,11 +319,7 @@ a {
     width: 100%;
   }
   .grid-item-vazy a {
-    width: 41vw;
-    height: 36vw;
     margin: 0 auto;
-    max-width: 669px;
-    max-height: 583px;
     min-width: 326px;
     min-height: 270px;
   }
@@ -315,11 +329,7 @@ a {
     width: 100%;
   }
   .grid-item-tree a {
-    width: 41vw;
-    height: 36vw;
     margin: 0 auto;
-    max-width: 643px;
-    max-height: 642px;
     min-width: 301px;
     min-height: 302px;
   }
@@ -329,11 +339,7 @@ a {
     width: 100%;
   }
   .grid-item-flowers a {
-    width: 41vw;
-    height: 36vw;
     margin: 0 auto;
-    max-width: 643px;
-    max-height: 642px;
     min-width: 301px;
     min-height: 302px;
   }
@@ -349,17 +355,11 @@ a {
 }
 
 @media (max-width: 1000px) {
-  .container {
-    padding: 0 20px;
-  }
   .footer {
     margin-bottom: 23px;
   }
 }
 @media (max-width: 768px) {
-  .container {
-    padding: 0 5px;
-  }
   .header__nav {
     display: none;
   }
