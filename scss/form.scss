@@ -1,0 +1,35 @@
+body {
+  background-image: url(../img/form/background.jpg);
+}
+
+.header {
+  background: transparent;
+}
+
+.footer__link {
+  color: white;
+}
+
+.footer__text {
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 714px;
+  margin: 0 auto;
+  label {
+    color: white;
+    font-size: clamp(1.5rem, 2.34vw, 2.813rem);
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    margin-bottom: 63px;
+  }
+  input {
+    font-size: clamp(1.5rem, 2.34vw, 2.813rem);
+    height: 9.1vh;
+    max-height: 99px;
+  }
+}

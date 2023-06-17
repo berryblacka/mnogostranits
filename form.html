@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/elements.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo header__link" href="/"
+              ><img src="./img/logo.svg" alt="logo"
+            /></a>
+            <button class="menu_btn">
+              <img src="./img/Vector.svg" alt="" />
+            </button>
+            <nav class="header__nav">
+              <ul class="header__links">
+                <li class="header__item">
+                  <a
+                    href="./history.html"
+                    class="header__link animated-text"
+                    id="text1"
+                    >история бренда</a
+                  >
+                </li>
+                <li class="header__item">
+                  <a href="./events.html" id="text2" class="header__link"
+                    >мероприятия
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="./market.html" id="text3" class="header__link"
+                    >магазин</a
+                  >
+                </li>
+                <li class="header__item">
+                  <a href="./form.html" id="text4" class="header__link"
+                    >запись</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="section">
+          <div class="container">
+            <div class="section__inner">
+              <form action="POST" class="form">
+                <label class="form__name" for="">
+                  Имя
+                  <input required type="text" />
+                </label>
+                <label class="form__name" for="">
+                  Телефон/ Почта
+                  <input required type="text" />
+                </label>
+                <label class="form__question" for="">
+                  Вопрос
+                  <input required type="text" />
+                </label>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <p class="footer__text">
+              Анастасия Толщина, Б22ДЗ08 куратор: Субботин Я.
+            </p>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">как добраться</a>
+              </li>
+              <li>
+                <a href="" class="footer__link margin-link">контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
