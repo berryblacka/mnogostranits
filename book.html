@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Запись</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/elements.css" />
-    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/book.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -51,43 +51,7 @@
           </div>
         </div>
       </header>
-      <main class="main">
-        <section class="section">
-          <div class="container">
-            <div class="section__inner">
-              <form action="POST" class="form">
-                <label class="form__name" for="">
-                  Имя
-                  <input required type="text" />
-                </label>
-                <label class="form__name" for="">
-                  Телефон/ Почта
-                  <input required type="text" />
-                </label>
-                <label class="form__question" for="">
-                  Заявка
-                  <!-- <input required type="text" /> -->
-                  <textarea
-                    name="form__question"
-                    id="form__question"
-                  ></textarea>
-                </label>
-                <button class="form__button" type="submit">отправить</button>
-              </form>
-              <div class="thanks">
-                <div class="border">
-                  <p class="thanks__text">
-                    Спасибо за заявку! Мы обязательно с вами свяжемся!
-                  </p>
-                  <div class="thanks__rect">
-                    <img src="./img/play.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+      <main class="main"></main>
       <footer class="footer">
         <div class="container">
           <div class="footer__inner">
@@ -106,17 +70,5 @@
         </div>
       </footer>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-
-    <script src="./js/form.js"></script>
   </body>
 </html>
