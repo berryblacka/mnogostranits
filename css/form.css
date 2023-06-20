@@ -32,10 +32,10 @@ body {
 }
 
 .form {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  max-width: 714px;
+  max-width: 500px;
   margin: 0 auto;
 }
 .form label {
