@@ -2,3 +2,43 @@ body {
   background-image: none;
   background-color: #b0d9ff;
 }
+
+.section {
+  height: 100%;
+  &__inner {
+    /* padding: 100px 0; */
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    img {
+      width: 50%;
+      max-width: 100%;
+      height: auto;
+    }
+    .imgs {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+    }
+
+    #previous,
+    #next {
+      // height: 56px;
+      width: 46px;
+      background: transparent;
+      border: none;
+      transform: rotate(180deg);
+    }
+    #next {
+      transform: rotate(0);
+    }
+    #previous img,
+    #next img {
+      width: 100%;
+    }
+  }
+}

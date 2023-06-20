@@ -14,6 +14,11 @@ body {
   background-size: cover;
   overflow-x: hidden;
   font-family: "Chocolates", Arial, Helvetica, sans-serif;
+  text-wrap: balance;
+}
+
+button {
+  cursor: pointer;
 }
 
 .wrapper {
@@ -80,7 +85,7 @@ a {
     padding: 0 5px;
   }
   .header__nav {
-    display: none !important;
+    display: none;
   }
   // .footer {
   //   margin-bottom: 13px;

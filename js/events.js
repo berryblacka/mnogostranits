@@ -20,4 +20,28 @@ $(document).ready(() => { // Выполнить обработчики при н
     },
 
   );
+  $('.hover-poster1').hover(
+    function () {
+      $(this).attr('src', './img/events/1_colored.png');
+    },
+    function () {
+      $(this).attr('src', './img/events/1.png');
+    },
+  );
+  $('.hover-poster2').hover(
+    function () {
+      $(this).attr('src', './img/events/2_colored.png');
+    },
+    function () {
+      $(this).attr('src', './img/events/2.png');
+    },
+  );
+  $('.hover-poster3').hover(
+    function () {
+      $(this).attr('src', './img/events/3_colored.png');
+    },
+    function () {
+      $(this).attr('src', './img/events/3.png');
+    },
+  );
 });

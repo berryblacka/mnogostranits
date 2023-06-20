@@ -80,11 +80,14 @@ $size: 23vw;
 .slider__p {
   // padding: 0 5.938vw;
   // position: absolute;
-  font-size: clamp(0.5rem, 1.563vw, 1.5rem);
+  font-size: clamp(0.8rem, 1.563vw, 1.5rem);
   font-weight: 500;
   // line-height: 36px;
-  line-height: 2.3vw;
-  max-width: 33.125vw;
+  // line-height: 2.3vw;
+  line-height: clamp(15px, 1.88vw, 2.25rem);
+  max-width: 24vw;
+  min-width: 185px;
+
   // z-index: 100;
   // color: white;
   // display: none;

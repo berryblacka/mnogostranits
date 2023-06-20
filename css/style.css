@@ -54,6 +54,7 @@ a {
   min-height: 124px;
 }
 .header__logo {
+  min-width: 189px;
   height: 100%;
   margin-right: 13.13vw;
   display: flex;
@@ -71,7 +72,7 @@ a {
   position: relative;
 }
 .header__link {
-  font-size: clamp(0.2rem, 1.98vw, 2.3rem);
+  font-size: clamp(0.8rem, 1.56vw, 1.875rem);
   opacity: 1;
 }
 
@@ -94,6 +95,8 @@ a {
   height: 100vh;
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
+  align-items: center;
+  justify-items: center;
 }
 
 .house-img {
@@ -161,21 +164,21 @@ a {
 #scene_tree_sq1 {
   position: absolute;
   top: -12.7vh;
-  left: 205px;
+  left: 108px;
   z-index: -1;
 }
 
 #scene_tree_sq2 {
   position: absolute;
   top: -10vh;
-  left: 286px;
+  left: 205px;
   z-index: -1;
 }
 
 #scene_flowers_sq1 {
   position: absolute;
   top: -10.3vh;
-  left: 105px;
+  left: 50px;
   z-index: -1;
 }
 
@@ -354,20 +357,47 @@ img {
   width: 50px;
 }
 
+#MenuToggle,
+.MenuToggle-label {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .footer {
     margin-bottom: 23px;
   }
 }
 @media (max-width: 768px) {
-  .header__nav {
+  .min-height {
+    min-height: 200px;
+  }
+  .MenuToggle-label {
+    display: block;
+  }
+  .header__nav,
+  .header__logo {
     display: none;
+    height: auto;
+  }
+  #MenuToggle:checked + .header__nav {
+    display: flex;
+    flex-direction: column;
+  }
+  #MenuToggle:checked + .header__nav .header__links {
+    flex-direction: column;
+  }
+  .header__link {
+    font-size: clamp(2rem, 1.6vw, 2.8rem);
+  }
+  .header__item {
+    margin-bottom: 100px;
+  }
+  .header__inner {
+    flex-direction: column;
+    justify-content: center;
   }
   .footer {
     margin-bottom: 13px;
-  }
-  .menu_btn {
-    display: block;
   }
 }
 .footer {
