@@ -7,7 +7,7 @@ body {
 }
 
 body {
-  background-color: #000521;
+  background-color: #0c1649;
   overflow-x: hidden;
   font-family: "Chocolates", Arial, Helvetica, sans-serif;
 }
@@ -80,11 +80,11 @@ a {
   margin: 0 auto;
   height: 100%;
   max-width: 2219px;
-  padding: 0 5.68vw;
+  padding: 0 109px;
 }
 
 .main {
-  padding: 14vh 0 0 0;
+  padding: 176px 0 0 0;
   flex: 1 0 auto;
 }
 
@@ -92,32 +92,27 @@ a {
   position: relative;
   display: grid;
   max-width: 1702px;
-  height: 100vh;
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
 }
 
 .house-img {
-  height: 24.7vh;
+  width: 364px;
   margin: 0;
 }
 
 .tree-img {
-  height: 29.6296vh;
+  width: 320px;
   margin: 0 auto;
 }
 
 .vazy-img {
-  height: 24.4vh;
+  width: 246px;
   margin: 0 auto;
 }
 
 .flowers-img {
-  height: 23vh;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  margin: 0 auto;
+  width: 265px;
 }
 
 .copy-animation {
@@ -134,13 +129,14 @@ a {
 
 #scene_house_sq1 {
   position: absolute;
-  top: 1.7vh;
+  top: 19px;
+  left: -73px;
   z-index: -1;
 }
 
 #scene_house_sq2 {
   position: absolute;
-  top: -0.9vh;
+  top: -10px;
   left: 219px;
   z-index: -1;
 }
@@ -154,28 +150,28 @@ a {
 
 #scene_vazy_sq2 {
   position: absolute;
-  top: 2.5vh;
+  top: 28px;
   left: 357px;
   z-index: -1;
 }
 
 #scene_tree_sq1 {
   position: absolute;
-  top: -12.7vh;
+  top: -138px;
   left: 205px;
   z-index: -1;
 }
 
 #scene_tree_sq2 {
   position: absolute;
-  top: -10vh;
+  top: -108px;
   left: 286px;
   z-index: -1;
 }
 
 #scene_flowers_sq1 {
   position: absolute;
-  top: -10.3vh;
+  top: -112px;
   left: 105px;
   z-index: -1;
 }
@@ -187,45 +183,24 @@ img {
 }
 
 .grid-item-house {
-  padding: 6.8vh 6.67vw 7.3vh 7px;
+  padding: 74px 128px 79px 7px;
   position: relative;
   z-index: 100;
 }
-.grid-item-house .house_sq1 {
-  height: 32.8vh;
-}
-.grid-item-house .house_sq2 {
-  height: 19.5vh;
-}
 
 .grid-item-vazy {
-  padding: 12.5vh 152px 16.6vh 249px;
+  padding: 135px 152px 180px 249px;
   position: relative;
-}
-.grid-item-vazy .vazy_sq1 {
-  height: 37.9vh;
-}
-.grid-item-vazy .vazy_sq2 {
-  height: 24vh;
 }
 
 .grid-item-tree {
-  padding: 0.6vh 0 15.9vh 227px;
+  padding: 7px 0 172px 227px;
   position: relative;
-}
-.grid-item-tree .tree_sq1 {
-  height: 41.9vh;
-}
-.grid-item-tree .tree_sq2 {
-  height: 32vh;
 }
 
 .grid-item-flowers {
-  padding: 7.8vh 0 21.1vh 298px;
+  padding: 85px 0 228px 298px;
   position: relative;
-}
-.grid-item-flowers .flowers_sq1 {
-  height: 49vh;
 }
 
 .house-img-mobile,
@@ -236,9 +211,6 @@ img {
 }
 
 @media (max-width: 1398px) {
-  .section__inner {
-    height: 100%;
-  }
   .footer {
     margin-bottom: 43px;
   }
