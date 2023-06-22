@@ -35,6 +35,7 @@
 }
 .section__text-heading {
   margin-bottom: 3.02vw;
+  font-weight: 600;
 }
 .section__text-p {
   max-width: 60%;

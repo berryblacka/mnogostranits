@@ -2,7 +2,7 @@
   position: relative;
 }
 
-$size: 23vw;
+$size: 28vw;
 .img1 {
   background-image: url(../img/history/1.png);
   background-repeat: no-repeat;
@@ -80,8 +80,8 @@ $size: 23vw;
 .slider__p {
   // padding: 0 5.938vw;
   // position: absolute;
-  font-size: clamp(0.8rem, 1.563vw, 1.5rem);
-  font-weight: 500;
+  font-size: clamp(0.8rem, 1.563vw, 1rem);
+  font-weight: 600;
   // line-height: 36px;
   // line-height: 2.3vw;
   line-height: clamp(15px, 1.88vw, 2.25rem);

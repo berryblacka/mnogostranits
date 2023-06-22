@@ -40,6 +40,9 @@ body {
 
 .form {
   width: 80%;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
   display: flex;
   // display: none;
   flex-direction: column;
@@ -55,7 +58,8 @@ body {
     margin-bottom: 3.2vh;
   }
   input {
-    font-size: clamp(1.5rem, 2.34vw, 2.813rem);
+    margin-top: 0.52vw;
+    font-size: clamp(1rem, 1.5vw, 2rem);
     height: 57px;
     background: transparent;
     color: white;
@@ -65,7 +69,8 @@ body {
     border-image-slice: 1;
   }
   textarea {
-    font-size: clamp(1.5rem, 2.34vw, 2.813rem);
+    margin-top: 0.52vw;
+    font-size: clamp(1rem, 1.5vw, 2rem);
     height: 57px;
     background: transparent;
     color: white;
@@ -88,7 +93,7 @@ body {
       #d9ff68 52.08%,
       #9cffcc 75%
     );
-    height: 56px;
+    height: 60px;
   }
 }
 

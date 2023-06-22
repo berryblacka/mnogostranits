@@ -2,12 +2,22 @@
 $(document).ready(() => {
   $('.slider').slick({
     arrows: false,
-    slidesToShow: 3,
+    slidesToShow: 1,
     // slidesToScroll: 1,
     variableWidth: true,
     autoplay: true,
+    // infinite: false,
 
-  }); // Выполнить обработчики при наведении
+  });
+  $('.slider2').slick({
+    arrows: false,
+    slidesToShow: 1,
+    // slidesToScroll: 1,
+    variableWidth: true,
+    autoplay: false,
+    infinite: false,
+
+  });
   $('.header__link').hover(
     function () {
       // Добавить класс белого цвета к #text1 и черного к текущему элементу при наведении
@@ -27,5 +37,36 @@ $(document).ready(() => {
       $('#text3').addClass('header__link_black');
     },
 
+  );
+  $('.slider__item-hover').hover(
+    () => {
+      $('.merch-absolute').css('opacity', '0');
+      $('.merch-absolute').css('display', 'block');
+      anime({
+        targets: '.merch-absolute',
+        opacity: [0, 1],
+        duration: 400,
+        easing: 'linear',
+        // begin() {
+
+        // },
+        complete() {
+          // $('.merch-absolute').css('opacity', '1');
+          $('.merch-absolute').css('display', 'block');
+        },
+      });
+    },
+    () => {
+      anime({
+        targets: '.merch-absolute',
+        opacity: [1, 0],
+        duration: 400,
+        easing: 'linear',
+        complete() {
+          $('.merch-absolute').css('opacity', '0');
+          $('.merch-absolute').css('display', 'none');
+        },
+      });
+    },
   );
 });

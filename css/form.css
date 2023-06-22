@@ -38,6 +38,11 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
+@media (max-width: 767px) {
+  .form {
+    width: 100%;
+  }
+}
 .form label {
   color: white;
   font-size: clamp(1.5rem, 2.34vw, 2.813rem);
@@ -46,7 +51,8 @@ body {
   margin-bottom: 3.2vh;
 }
 .form input {
-  font-size: clamp(1.5rem, 2.34vw, 2.813rem);
+  margin-top: 0.52vw;
+  font-size: clamp(1rem, 1.5vw, 2rem);
   height: 57px;
   background: transparent;
   color: white;
@@ -57,7 +63,8 @@ body {
   border-image-slice: 1;
 }
 .form textarea {
-  font-size: clamp(1.5rem, 2.34vw, 2.813rem);
+  margin-top: 0.52vw;
+  font-size: clamp(1rem, 1.5vw, 2rem);
   height: 57px;
   background: transparent;
   color: white;
@@ -75,7 +82,7 @@ body {
   font-size: clamp(1.5rem, 1.98vw, 2.375rem);
   font-weight: 300;
   background: linear-gradient(90deg, #82ffe4 11.46%, #85d7ff 28.13%, #d9ff68 52.08%, #9cffcc 75%);
-  height: 56px;
+  height: 60px;
 }
 
 img {

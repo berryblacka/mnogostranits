@@ -7,8 +7,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  height: 23vw;
-  width: 23vw;
+  height: 28vw;
+  width: 28vw;
   max-height: 705px;
   max-width: 705px;
   min-height: 200px;
@@ -21,8 +21,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  height: 23vw;
-  width: 23vw;
+  height: 28vw;
+  width: 28vw;
   max-height: 705px;
   max-width: 705px;
   min-height: 200px;
@@ -35,8 +35,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  height: 23vw;
-  width: 23vw;
+  height: 28vw;
+  width: 28vw;
   max-height: 705px;
   max-width: 705px;
   min-height: 200px;
@@ -49,8 +49,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  height: 23vw;
-  width: 23vw;
+  height: 28vw;
+  width: 28vw;
   max-height: 705px;
   max-width: 705px;
   min-height: 200px;
@@ -70,8 +70,8 @@
 }
 
 .slider__p {
-  font-size: clamp(0.8rem, 1.563vw, 1.5rem);
-  font-weight: 500;
+  font-size: clamp(0.8rem, 1.563vw, 1rem);
+  font-weight: 600;
   line-height: clamp(15px, 1.88vw, 2.25rem);
   max-width: 24vw;
   min-width: 185px;
@@ -127,7 +127,7 @@ input {
   background: #5c99f2;
   color: #fff;
   min-height: 200px;
-  height: 23vw;
+  height: 28vw;
   transform: rotateX(180deg);
   transform-style: preserve-3d;
 }

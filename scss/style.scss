@@ -80,6 +80,10 @@ a {
     font-size: clamp(0.8rem, 1.56vw, 1.875rem);
     // font-size: 2,375;
     opacity: 1;
+
+    &:hover {
+      color: #d6f34c;
+    }
   }
 }
 .container {
@@ -122,47 +126,50 @@ a {
 // }
 
 .house-img {
-  // background-image: url(../img/house/house.png);
+  background-image: url(../img/house/house.png);
   width: 364px;
   // width: 18.96vw;
-  // height: 364px;
+  height: 364px;
   // height: 24.7vh;
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   margin: 0;
 }
 
 .tree-img {
-  // background-image: url(../img/tree/tree.png);
+  background-image: url(../img/tree/tree.png);
   width: 320px;
+  height: 320px;
   // height: 29.6296vh;
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   // position: absolute;
   margin: 0 auto;
   // margin-left: 304px;
 }
 
 .vazy-img {
-  // background-image: url(../img/vazy/vazy.png);
+  background-image: url(../img/vazy/vazy.png);
   width: 246px;
+  height: 246px;
   // height: 24.4vh;
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 
   margin: 0 auto;
 }
 
 .flowers-img {
-  // background-image: url(../img/flowers/flowers.png);
+  background-image: url(../img/flowers/flowers.png);
   width: 265px;
+  height: 265px;
   // height: 23vh;
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   // position: absolute;
 }
 
@@ -210,14 +217,14 @@ a {
 #scene_vazy_sq1 {
   position: absolute;
   top: 0px;
-  left: 106px;
+  left: 0;
   z-index: -1;
 }
 #scene_vazy_sq2 {
   position: absolute;
   // top: 2.5vh;
   top: 28px;
-  left: 357px;
+  left: 191px;
   z-index: -1;
 }
 #scene_tree_sq1 {
@@ -264,8 +271,9 @@ img {
 }
 .grid-item-vazy {
   // padding: 12.5vh 152px 16.6vh 249px;
-  padding: 135px 152px 180px 249px;
+  padding: 135px 152px 180px 224px;
   position: relative;
+
   // .vazy_sq1 {
   //   height: 37.9vh;
   // }
@@ -276,7 +284,7 @@ img {
 
 .grid-item-tree {
   // padding: 0.6vh 0 15.9vh 227px;
-  padding: 7px 0 172px 227px;
+  padding: 7px 0 172px 417px;
   position: relative;
   // .tree_sq1 {
   //   height: 41.9vh;
@@ -287,7 +295,7 @@ img {
 }
 
 .grid-item-flowers {
-  padding: 85px 0 228px 298px;
+  padding: 85px 0 228px 424px;
   // padding: 7.8vh 0 21.1vh 298px;
   position: relative;
   // .flowers_sq1 {
