@@ -39,7 +39,7 @@ body {
 }
 
 .form {
-  width: 80%;
+  width: 60%;
   @media (max-width: 767px) {
     width: 100%;
   }
@@ -50,7 +50,7 @@ body {
   margin: 0 auto;
   label {
     color: white;
-    font-size: clamp(1.5rem, 2.34vw, 2.813rem);
+    font-size: clamp(1.5rem, 2.34vw, 2.3rem);
     display: flex;
     flex-direction: column;
     // gap: 33px;
@@ -60,7 +60,8 @@ body {
   input {
     margin-top: 0.52vw;
     font-size: clamp(1rem, 1.5vw, 2rem);
-    height: 57px;
+    // height: 57px;
+    height: 6.1vh;
     background: transparent;
     color: white;
     max-height: 99px;

@@ -150,7 +150,7 @@
 
 .slick-list {
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .slider__item-img {
