@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Claddagh</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script
@@ -14,7 +16,11 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@grcmichael/gscroll@1.0.15/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <script src="./js/gsap-public/ScrollSmoother.min.js"></script>
+    <script src="./js/smooth-scroll.js"></script>
     <script src="./js/main.js"></script>
   </head>
   <body>
@@ -63,133 +69,135 @@
           </div>
         </div>
       </header>
-      <main class="main">
-        <section class="section">
-          <div class="container">
-            <div class="section__inner">
-              <div class="grid-item-house">
-                <div id="scene_house_sq1">
-                  <img
-                    class="house_sq1"
-                    data-depth="0.5"
-                    src="./img/house/sq1.svg"
-                    alt=""
-                  />
+      <div class="content">
+        <main class="main">
+          <section class="section">
+            <div class="container">
+              <div class="section__inner">
+                <div class="grid-item-house">
+                  <div id="scene_house_sq1">
+                    <img
+                      class="house_sq1"
+                      data-depth="0.5"
+                      src="./img/house/sq1.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div id="scene_house_sq2">
+                    <img
+                      data-depth="2"
+                      class="house_sq2"
+                      src="./img/house/sq2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <!-- <img class="house_mobile" src="./img/house/Frame 1.png" alt="" /> -->
+                  <a href="./history.html">
+                    <div class="house-img"></div>
+                    <!-- <img class="house-img" src="./img/house/housesq.png" alt="" /> -->
+                    <img
+                      class="house-img-mobile"
+                      src="./img/house/Frame1.png"
+                      alt=""
+                    />
+                  </a>
                 </div>
-                <div id="scene_house_sq2">
-                  <img
-                    data-depth="2"
-                    class="house_sq2"
-                    src="./img/house/sq2.svg"
-                    alt=""
-                  />
+                <div class="grid-item-vazy">
+                  <div id="scene_vazy_sq1">
+                    <img
+                      data-depth="0.5"
+                      class="vazy_sq1"
+                      src="./img/vazy/sq1.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div id="scene_vazy_sq2">
+                    <img
+                      data-depth="2"
+                      class="vazy_sq2"
+                      src="./img/vazy/sq2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <a href="./market.html">
+                    <div class="vazy-img"></div>
+                    <!-- <img class="vazy-img" src="./img/vazy/vazysq.png" alt="" /> -->
+                    <img
+                      class="vazy-img-mobile"
+                      src="./img/vazy/Frame2.png"
+                      alt=""
+                    />
+                  </a>
                 </div>
-                <!-- <img class="house_mobile" src="./img/house/Frame 1.png" alt="" /> -->
-                <a href="./history.html">
-                  <div class="house-img"></div>
-                  <!-- <img class="house-img" src="./img/house/housesq.png" alt="" /> -->
-                  <img
-                    class="house-img-mobile"
-                    src="./img/house/Frame1.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div class="grid-item-vazy">
-                <div id="scene_vazy_sq1">
-                  <img
-                    data-depth="0.5"
-                    class="vazy_sq1"
-                    src="./img/vazy/sq1.svg"
-                    alt=""
-                  />
+                <div class="grid-item-tree">
+                  <div id="scene_tree_sq1">
+                    <img
+                      data-depth="0.5"
+                      class="tree_sq1"
+                      src="./img/tree/sq1.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div id="scene_tree_sq2">
+                    <img
+                      class="tree_sq2"
+                      data-depth="2"
+                      src="./img/tree/sq2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <a href="./events.html">
+                    <div class="tree-img"></div>
+                    <!-- <img class="tree-img" src="./img/tree/treesq.png" alt="" /> -->
+                    <img
+                      class="tree-img-mobile"
+                      src="./img/tree/Frame3.png"
+                      alt=""
+                    />
+                  </a>
                 </div>
-                <div id="scene_vazy_sq2">
-                  <img
-                    data-depth="2"
-                    class="vazy_sq2"
-                    src="./img/vazy/sq2.svg"
-                    alt=""
-                  />
-                </div>
-                <a href="./market.html">
-                  <div class="vazy-img"></div>
-                  <!-- <img class="vazy-img" src="./img/vazy/vazysq.png" alt="" /> -->
-                  <img
-                    class="vazy-img-mobile"
-                    src="./img/vazy/Frame2.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div class="grid-item-tree">
-                <div id="scene_tree_sq1">
-                  <img
-                    data-depth="0.5"
-                    class="tree_sq1"
-                    src="./img/tree/sq1.svg"
-                    alt=""
-                  />
-                </div>
-                <div id="scene_tree_sq2">
-                  <img
-                    class="tree_sq2"
-                    data-depth="2"
-                    src="./img/tree/sq2.svg"
-                    alt=""
-                  />
-                </div>
-                <a href="./events.html">
-                  <div class="tree-img"></div>
-                  <!-- <img class="tree-img" src="./img/tree/treesq.png" alt="" /> -->
-                  <img
-                    class="tree-img-mobile"
-                    src="./img/tree/Frame3.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div class="grid-item-flowers">
-                <div id="scene_flowers_sq1">
-                  <img
-                    data-depth="0.5"
-                    class="flowers_sq1"
-                    src="./img/flowers/sq.svg"
-                    alt=""
-                  />
-                </div>
-                <a href="./form.html">
-                  <div class="flowers-img"></div>
-                  <!-- <img
+                <div class="grid-item-flowers">
+                  <div id="scene_flowers_sq1">
+                    <img
+                      data-depth="0.5"
+                      class="flowers_sq1"
+                      src="./img/flowers/sq.svg"
+                      alt=""
+                    />
+                  </div>
+                  <a href="./form.html">
+                    <div class="flowers-img"></div>
+                    <!-- <img
                     class="flowers-img"
                     src="./img/flowers/flow.png"
                     alt=""
                   /> -->
-                  <img
-                    class="flowers-img-mobile"
-                    src="./img/flowers/Frame4.png"
-                    alt=""
-                  />
-                </a>
+                    <img
+                      class="flowers-img-mobile"
+                      src="./img/flowers/Frame4.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
               </div>
             </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__inner">
+              <p class="footer__text">
+                Анастасия Толщина, Б22ДЗ08 куратор: Субботин Я.
+              </p>
+              <ul class="footer__links">
+                <li>
+                  <a href="" class="footer__link">контакты</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__inner">
-            <p class="footer__text">
-              Анастасия Толщина, Б22ДЗ08 куратор: Субботин Я.
-            </p>
-            <ul class="footer__links">
-              <li>
-                <a href="" class="footer__link">контакты</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

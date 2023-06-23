@@ -401,7 +401,7 @@ img {
 }
 .footer {
   flex: 0 0 auto;
-  margin-bottom: 83px;
+  padding-bottom: 3vw !important;
 }
 .footer__inner {
   display: flex;

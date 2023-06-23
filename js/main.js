@@ -2,15 +2,8 @@
 /* eslint-disable no-undef */
 // /* eslint-disable no-undef */
 // /* eslint-disable no-new */
-// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 $(document).ready(() => {
-  // ScrollSmoother.create({
-  //   wrapper: '.wrapper',
-  //   content: 'main',
-  //   smooth: 2,
-  //   normalizeScroll: true,
-  // });
   $('.house-img').on('mouseover', () => {
     anime({
       targets: '#text1',

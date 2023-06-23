@@ -81,17 +81,23 @@ $size: 28vw;
 .slider__p {
   // padding: 0 5.938vw;
   // position: absolute;
-  font-size: clamp(0.8rem, 1.563vw, 1rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
   font-weight: 600;
   // line-height: 36px;
   // line-height: 2.3vw;
-  line-height: clamp(15px, 1.88vw, 2.25rem);
-  max-width: 24vw;
+  // line-height: clamp(15px, 1vw, 1.5rem);
+  max-width: 26vw;
   min-width: 185px;
 
   // z-index: 100;
   // color: white;
   // display: none;
+}
+.slider__p-another {
+  max-width: 24vw;
+}
+.slider__p-another2 {
+  max-width: 31vw;
 }
 
 .text-container {
@@ -146,7 +152,7 @@ input {
 }
 
 .card .back {
-  background: #5c99f2;
+  background: #80c1ff;
   color: #fff;
   min-height: 200px;
   height: $size;

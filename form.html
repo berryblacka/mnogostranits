@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Запись</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -19,7 +21,11 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <script src="./js/gsap-public/ScrollSmoother.min.js"></script>
+    <script src="./js/smooth-scroll.js"></script>
     <script src="./js/form.js"></script>
   </head>
   <body>
@@ -70,73 +76,75 @@
           </div>
         </div>
       </header>
-      <main class="main">
-        <section class="section">
-          <div class="container">
-            <div class="section__inner">
-              <form action="POST" class="form">
-                <label class="form__name" for="name">
-                  Имя
-                  <input id="name" name="name" required type="text" />
-                </label>
-                <label class="form__name" for="tel">
-                  Телефон
-                  <input
-                    id="tel"
-                    name="tel"
-                    required
-                    type="tel"
-                    pattern="^\+7\d{10}$"
-                    minlength="12"
-                    maxlength="12"
-                    value="+7"
-                  />
-                </label>
-                <label class="form__name" for="email">
-                  Почта
-                  <input id="email" name="email" required type="email" />
-                </label>
-                <label class="form__question" for="form__question">
-                  Заявка
-                  <!-- <input required type="text" /> -->
-                  <textarea
-                    name="form__question"
-                    id="form__question"
-                    required
-                  ></textarea>
-                </label>
-                <button class="form__button" type="submit">отправить</button>
-              </form>
-              <div class="thanks">
-                <div class="border">
-                  <p class="thanks__text">
-                    Спасибо за заявку! Мы обязательно с вами свяжемся!
-                  </p>
-                  <a href="https://berryblacka.github.io/lending_module_3/">
-                    <div class="thanks__rect">
-                      <img src="./img/play.svg" alt="" />
-                    </div>
-                  </a>
+      <div class="content">
+        <main class="main">
+          <section class="section">
+            <div class="container">
+              <div class="section__inner">
+                <form action="POST" class="form">
+                  <label class="form__name" for="name">
+                    Имя
+                    <input id="name" name="name" required type="text" />
+                  </label>
+                  <label class="form__name" for="tel">
+                    Телефон
+                    <input
+                      id="tel"
+                      name="tel"
+                      required
+                      type="tel"
+                      pattern="^\+7\d{10}$"
+                      minlength="12"
+                      maxlength="12"
+                      value="+7"
+                    />
+                  </label>
+                  <label class="form__name" for="email">
+                    Почта
+                    <input id="email" name="email" required type="email" />
+                  </label>
+                  <label class="form__question" for="form__question">
+                    Заявка
+                    <!-- <input required type="text" /> -->
+                    <textarea
+                      name="form__question"
+                      id="form__question"
+                      required
+                    ></textarea>
+                  </label>
+                  <button class="form__button" type="submit">отправить</button>
+                </form>
+                <div class="thanks">
+                  <div class="border">
+                    <p class="thanks__text">
+                      Спасибо за заявку! Мы обязательно с вами свяжемся!
+                    </p>
+                    <a href="https://berryblacka.github.io/lending_module_3/">
+                      <div class="thanks__rect">
+                        <img src="./img/play.svg" alt="" />
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__inner">
+              <p class="footer__text">
+                Анастасия Толщина, Б22ДЗ08 куратор: Субботин Я.
+              </p>
+              <ul class="footer__links">
+                <li>
+                  <a href="" class="footer__link">контакты</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__inner">
-            <p class="footer__text">
-              Анастасия Толщина, Б22ДЗ08 куратор: Субботин Я.
-            </p>
-            <ul class="footer__links">
-              <li>
-                <a href="" class="footer__link">контакты</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
