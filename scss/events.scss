@@ -21,6 +21,7 @@
     height: auto;
     max-width: 443px;
     width: 23.07vw;
+    // transition: opacity 1s linear;
     @media (max-width: 768px) {
       width: 80%;
     }
@@ -29,10 +30,11 @@
     flex-direction: column;
     justify-content: space-between;
     font-size: clamp(1.2rem, 1.56vw, 1.875rem);
+    line-height: clamp(1.5rem, 1.88vw, 2.25rem);
     text-wrap: balance;
     margin-bottom: 9.58vw;
     &-heading {
-      margin-bottom: 3.02vw;
+      margin-bottom: 1.5vbw;
       font-weight: 600;
     }
     &-p {

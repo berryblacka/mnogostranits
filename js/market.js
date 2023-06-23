@@ -38,33 +38,64 @@ $(document).ready(() => {
     },
 
   );
-  $('.slider__item-hover').hover(
+  $('.slider__item-hover1').hover(
     () => {
-      $('.merch-absolute').css('opacity', '0');
-      $('.merch-absolute').css('display', 'block');
+      $('.merch-absolute1').css('opacity', '0');
+      $('.merch-absolute1').css('display', 'block');
       anime({
-        targets: '.merch-absolute',
+        targets: '.merch-absolute1',
         opacity: [0, 1],
-        duration: 400,
+        duration: 200,
         easing: 'linear',
         // begin() {
 
         // },
         complete() {
           // $('.merch-absolute').css('opacity', '1');
-          $('.merch-absolute').css('display', 'block');
+          $('.merch-absolute1').css('display', 'block');
         },
       });
     },
     () => {
       anime({
-        targets: '.merch-absolute',
+        targets: '.merch-absolute1',
         opacity: [1, 0],
-        duration: 400,
+        duration: 200,
         easing: 'linear',
         complete() {
-          $('.merch-absolute').css('opacity', '0');
-          $('.merch-absolute').css('display', 'none');
+          $('.merch-absolute1').css('opacity', '0');
+          $('.merch-absolute1').css('display', 'none');
+        },
+      });
+    },
+  );
+  $('.slider__item-hover2').hover(
+    () => {
+      $('.merch-absolute2').css('opacity', '0');
+      $('.merch-absolute2').css('display', 'block');
+      anime({
+        targets: '.merch-absolute2',
+        opacity: [0, 1],
+        duration: 200,
+        easing: 'linear',
+        // begin() {
+
+        // },
+        complete() {
+          // $('.merch-absolute').css('opacity', '1');
+          $('.merch-absolute2').css('display', 'block');
+        },
+      });
+    },
+    () => {
+      anime({
+        targets: '.merch-absolute2',
+        opacity: [1, 0],
+        duration: 200,
+        easing: 'linear',
+        complete() {
+          $('.merch-absolute2').css('opacity', '0');
+          $('.merch-absolute2').css('display', 'none');
         },
       });
     },

@@ -20,28 +20,46 @@ $(document).ready(() => { // Выполнить обработчики при н
     },
 
   );
-  $('.hover-poster1').hover(
-    function () {
-      $(this).attr('src', './img/events/1_colored.png');
-    },
-    function () {
-      $(this).attr('src', './img/events/1.png');
-    },
-  );
-  $('.hover-poster2').hover(
-    function () {
-      $(this).attr('src', './img/events/2_colored.png');
-    },
-    function () {
-      $(this).attr('src', './img/events/2.png');
-    },
-  );
-  $('.hover-poster3').hover(
-    function () {
-      $(this).attr('src', './img/events/3_colored.png');
-    },
-    function () {
-      $(this).attr('src', './img/events/3.png');
-    },
-  );
+  // $('.hover-poster1').hover(
+  //   function () {
+  //     $(this).attr('src', './img/events/1_colored.png');
+  //   },
+  //   function () {
+  //     $(this).attr('src', './img/events/1.png');
+  //   },
+  // );
+
+  $('.hover-poster1').on('mouseenter', function () {
+    const coloredImage = './img/events/1_colored.png';
+    $(this).fadeOut('fast', function () {
+      $(this).attr('src', coloredImage).fadeIn('fast');
+    });
+  }).on('mouseleave', function () {
+    const defaultImage = './img/events/1.png';
+    $(this).fadeOut('fast', function () {
+      $(this).attr('src', defaultImage).fadeIn('fast');
+    });
+  });
+  $('.hover-poster2').on('mouseenter', function () {
+    const coloredImage = './img/events/2_colored.png';
+    $(this).fadeOut('fast', function () {
+      $(this).attr('src', coloredImage).fadeIn('fast');
+    });
+  }).on('mouseleave', function () {
+    const defaultImage = './img/events/2.png';
+    $(this).fadeOut('fast', function () {
+      $(this).attr('src', defaultImage).fadeIn('fast');
+    });
+  });
+  $('.hover-poster3').on('mouseenter', function () {
+    const coloredImage = './img/events/3_colored.png';
+    $(this).fadeOut('fast', function () {
+      $(this).attr('src', coloredImage).fadeIn('fast');
+    });
+  }).on('mouseleave', function () {
+    const defaultImage = './img/events/3.png';
+    $(this).fadeOut('fast', function () {
+      $(this).attr('src', defaultImage).fadeIn('fast');
+    });
+  });
 });
