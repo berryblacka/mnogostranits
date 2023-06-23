@@ -63,6 +63,7 @@
   transform-style: preserve-3d;
   display: block;
   height: 100%;
+  cursor: pointer;
 }
 
 .slider__item {

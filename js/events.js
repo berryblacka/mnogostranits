@@ -31,35 +31,35 @@ $(document).ready(() => { // Выполнить обработчики при н
 
   $('.hover-poster1').on('mouseenter', function () {
     const coloredImage = './img/events/1_colored.png';
-    $(this).fadeOut('fast', function () {
-      $(this).attr('src', coloredImage).fadeIn('fast');
+    $(this).fadeOut('', function () {
+      $(this).attr('src', coloredImage).fadeIn('');
     });
   }).on('mouseleave', function () {
     const defaultImage = './img/events/1.png';
-    $(this).fadeOut('fast', function () {
-      $(this).attr('src', defaultImage).fadeIn('fast');
+    $(this).fadeOut('', function () {
+      $(this).attr('src', defaultImage).fadeIn('');
     });
   });
   $('.hover-poster2').on('mouseenter', function () {
     const coloredImage = './img/events/2_colored.png';
-    $(this).fadeOut('fast', function () {
-      $(this).attr('src', coloredImage).fadeIn('fast');
+    $(this).fadeOut('', function () {
+      $(this).attr('src', coloredImage).fadeIn('');
     });
   }).on('mouseleave', function () {
     const defaultImage = './img/events/2.png';
-    $(this).fadeOut('fast', function () {
-      $(this).attr('src', defaultImage).fadeIn('fast');
+    $(this).fadeOut('', function () {
+      $(this).attr('src', defaultImage).fadeIn('');
     });
   });
   $('.hover-poster3').on('mouseenter', function () {
     const coloredImage = './img/events/3_colored.png';
-    $(this).fadeOut('fast', function () {
-      $(this).attr('src', coloredImage).fadeIn('fast');
+    $(this).fadeOut('', function () {
+      $(this).attr('src', coloredImage).fadeIn('');
     });
   }).on('mouseleave', function () {
     const defaultImage = './img/events/3.png';
-    $(this).fadeOut('fast', function () {
-      $(this).attr('src', defaultImage).fadeIn('fast');
+    $(this).fadeOut('', function () {
+      $(this).attr('src', defaultImage).fadeIn('');
     });
   });
 });

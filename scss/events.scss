@@ -10,7 +10,7 @@
     justify-content: space-between;
     gap: 8.75vw;
     align-items: center;
-    margin-bottom: 1.82vw;
+    margin-bottom: 4.3vw;
     @media (max-width: 768px) {
       flex-direction: column;
     }
@@ -34,8 +34,9 @@
     text-wrap: balance;
     margin-bottom: 9.58vw;
     &-heading {
-      margin-bottom: 1.5vbw;
+      margin-bottom: 1.5vw;
       font-weight: 600;
+      font-size: clamp(1.5rem, 1.88vw, 2.25rem);
     }
     &-p {
       max-width: 60%;
@@ -46,7 +47,7 @@
   }
   .guide {
     width: 100%;
-    margin-bottom: 1.82vw;
+    margin-bottom: 4.3vw;
     img {
       width: 100%;
     }
@@ -56,11 +57,11 @@
     max-width: 1649px;
     width: 100%;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(443px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
     justify-items: center;
     row-gap: 4.17vw;
     justify-content: center;
-    margin-bottom: 1.82vw;
+    margin-bottom: 4.3vw;
   }
   .poster-grid {
     @media (max-width: 768px) {

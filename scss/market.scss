@@ -1,7 +1,7 @@
 $darkblue: #041c4a;
 .market {
   &__link {
-    font-weight: 600;
+    // font-weight: 600;
     font-size: clamp(2rem, 2.34vw, 2.813rem);
     color: $darkblue;
     width: fit-content;
@@ -9,6 +9,10 @@ $darkblue: #041c4a;
       color: white;
     }
   }
+}
+
+.main {
+  padding: 12.5vw 0 0 0;
 }
 
 .section__inner {
@@ -21,12 +25,13 @@ $darkblue: #041c4a;
   flex-direction: column;
   // min-height: 351px;
   justify-content: space-evenly;
-  margin-bottom: 5.52vw;
+  margin-bottom: 5.8vw;
   &__heading {
     font-weight: 300;
-    font-size: clamp(2rem, 2.34vw, 2.8125rem);
+    font-size: clamp(1.5rem, 1.88vw, 2.25rem);
+    font-weight: 600;
     // margin-bottom: 50px;
-    margin-bottom: 2.08vw;
+    margin-bottom: 1.5vw;
   }
   &__text {
     font-size: clamp(1rem, 1.56vw, 1.875rem);
@@ -47,10 +52,10 @@ $darkblue: #041c4a;
   // justify-content: space-evenly;
   margin-bottom: 8.96vw;
   &__heading {
-    font-weight: 300;
-    font-size: clamp(2rem, 2.34vw, 2.8125rem);
+    font-weight: 600;
+    font-size: clamp(1.5rem, 1.88vw, 2.25rem);
     // margin-bottom: 50px;
-    margin-bottom: 2.08vw;
+    margin-bottom: 1.5vw;
   }
   &__text {
     font-size: clamp(1rem, 1.56vw, 1.875rem);
@@ -73,9 +78,9 @@ $darkblue: #041c4a;
   // min-height: 669px;
   // justify-content: space-evenly;
   &__heading {
-    font-weight: 300;
-    font-size: clamp(2rem, 2.34vw, 2.8125rem);
-    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 1.88vw, 2.25rem);
+    margin-bottom: 4vw;
   }
 
   .slider__item {
@@ -89,6 +94,7 @@ $darkblue: #041c4a;
     position: absolute;
     display: flex;
     display: none;
+    background-color: #b0d9ff;
     flex-direction: column;
     pointer-events: none;
     max-width: 416px;
@@ -97,7 +103,7 @@ $darkblue: #041c4a;
     }
     // opacity: 0.5;
     // transition: opacity 0.3s ease;
-    background-color: white;
+
     box-sizing: content-box;
     position: absolute;
     z-index: 100;
@@ -136,6 +142,7 @@ $darkblue: #041c4a;
     }
   }
   .merch-absolute2 {
+    background-color: #b0d9ff;
     position: absolute;
     display: flex;
     display: none;
@@ -147,7 +154,7 @@ $darkblue: #041c4a;
     }
     // opacity: 0.5;
     // transition: opacity 0.3s ease;
-    background-color: white;
+
     box-sizing: content-box;
     position: absolute;
     z-index: 100;

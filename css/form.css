@@ -32,11 +32,12 @@ body {
 }
 
 .form {
-  width: 60%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
+  margin-bottom: 2vw;
 }
 @media (max-width: 767px) {
   .form {
@@ -45,15 +46,16 @@ body {
 }
 .form label {
   color: white;
-  font-size: clamp(1.5rem, 2.34vw, 2.3rem);
+  font-size: clamp(1.3rem, 2.1vw, 2rem);
   display: flex;
   flex-direction: column;
-  margin-bottom: 3.2vh;
+  margin-bottom: 3vh;
 }
 .form input {
+  font-family: "Chocolate", Arial, Helvetica, sans-serif;
   margin-top: 0.52vw;
   font-size: clamp(1rem, 1.5vw, 2rem);
-  height: 6.1vh;
+  height: 5.1vh;
   background: transparent;
   color: white;
   max-height: 99px;
@@ -65,7 +67,7 @@ body {
 .form textarea {
   margin-top: 0.52vw;
   font-size: clamp(1rem, 1.5vw, 2rem);
-  height: 57px;
+  height: 5.27vh;
   background: transparent;
   color: white;
   max-height: 99px;
@@ -75,7 +77,7 @@ body {
      border-image: linear-gradient(to left, #77ffd6, #83d6fa, #faff00);
   border-image-slice: 1;
   max-width: 100%;
-  min-height: 119px;
+  min-height: 100px;
   margin-bottom: 5.2vh;
 }
 .form__button {
